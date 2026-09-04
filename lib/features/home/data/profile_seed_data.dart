@@ -9,7 +9,7 @@ final Profile profileSeed = Profile(
       'Full-stack and game developer with hands-on Flutter, Java/libGDX, and '
       'Spring Boot experience — from shipped iOS/Android titles to '
       'production REST APIs. Based in Queen Creek, AZ.',
-  photoUrl: 'https://saenzsoftware.com/teamsupre.me/isaenz/img/profile-img.jpg',
+  photoUrl: 'assets/images/profile.jpg',
   location: 'Queen Creek, AZ',
   usCitizen: true,
   skillChips: const ['Flutter', 'Java', 'libGDX', 'Spring Boot', 'n8n', 'Docker'],

@@ -13,10 +13,9 @@ final List<Project> projectsSeed = [
         'A skate-inspired arcade game built with libGDX and Box2D physics, '
         'featuring Bluetooth controller support via Core Bluetooth and a '
         'RoboVM-powered iOS build alongside native Android.',
-    coverImageUrl: 'https://saenzsoftware.com/teamsupre.me/isaenz/img/thumbthrasher-cover.jpg',
+    coverImageUrl: 'assets/images/projects/thumbthrasher-cover.png',
     galleryImages: [
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/thumbthrasher-1.jpg',
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/thumbthrasher-2.jpg',
+      'assets/images/projects/thumbthrasher-gallery-1.jpeg',
     ],
     techStack: [
       TechStackItem(label: 'Java', group: 'Engine & Code'),
@@ -41,10 +40,10 @@ final List<Project> projectsSeed = [
         'A 2D platformer starring a Mesoamerican-mythology hero, combining '
         'libGDX gameplay systems with hand-crafted Blender 3D assets and a '
         'reactive particle system for its title sequence.',
-    coverImageUrl: 'https://saenzsoftware.com/superquetzal.com/img/cover.jpg',
+    coverImageUrl: 'assets/images/projects/superquetzal-cover.png',
     galleryImages: [
-      'https://saenzsoftware.com/superquetzal.com/img/screen-1.jpg',
-      'https://saenzsoftware.com/superquetzal.com/img/screen-2.jpg',
+      'assets/images/projects/superquetzal-gallery-1.jpeg',
+      'assets/images/projects/superquetzal-gallery-2.png',
     ],
     techStack: [
       TechStackItem(label: 'Java', group: 'Engine & Code'),
@@ -68,11 +67,8 @@ final List<Project> projectsSeed = [
         'A nutrition-tracking app pairing a Flutter/Dart client with a Yii '
         'PHP + MySQL backend, Firebase auth, and Nutritionix API integration '
         'for real-time food lookups and macro tracking.',
-    coverImageUrl: 'https://saenzsoftware.com/teamsupre.me/isaenz/img/ainutrix-cover.jpg',
-    galleryImages: [
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/ainutrix-1.jpg',
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/ainutrix-2.jpg',
-    ],
+    coverImageUrl: 'assets/images/projects/ainutrix-icon.png',
+    galleryImages: [],
     techStack: [
       TechStackItem(label: 'Flutter', group: 'Engine & Code'),
       TechStackItem(label: 'Dart', group: 'Engine & Code'),
@@ -96,11 +92,8 @@ final List<Project> projectsSeed = [
         'Full-stack publishing platform for an independent press, built on '
         'Spring Boot and PostgreSQL with n8n workflow automation, Dockerized '
         'deployment, and SendGrid-powered transactional email.',
-    coverImageUrl: 'https://saenzsoftware.com/teamsupre.me/isaenz/img/msp-cover.jpg',
-    galleryImages: [
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/msp-1.jpg',
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/msp-2.jpg',
-    ],
+    coverImageUrl: 'assets/images/projects/morningstarpress-cover.svg',
+    galleryImages: [],
     techStack: [
       TechStackItem(label: 'Spring Boot', group: 'Backend'),
       TechStackItem(label: 'PostgreSQL', group: 'Backend'),
@@ -122,10 +115,10 @@ final List<Project> projectsSeed = [
     description:
         'An original fantasy graphic novel series illustrated in Procreate '
         'and laid out in Canva, serialized for readers on Tapas.',
-    coverImageUrl: 'https://saenzsoftware.com/teamsupre.me/isaenz/img/starfall-cover.jpg',
+    coverImageUrl: 'assets/images/projects/starfall-cover.png',
     galleryImages: [
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/starfall-1.jpg',
-      'https://saenzsoftware.com/teamsupre.me/isaenz/img/starfall-2.jpg',
+      'assets/images/projects/starfall-art-1.png',
+      'assets/images/projects/starfall-art-2.png',
     ],
     techStack: [
       TechStackItem(label: 'Procreate', group: 'Art'),
