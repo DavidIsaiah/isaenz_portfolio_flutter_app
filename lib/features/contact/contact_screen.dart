@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/analytics/analytics_service.dart';
 import '../../shared/widgets/error_retry.dart';
 import '../../shared/widgets/tap_scale.dart';
 import '../home/models/profile.dart';
@@ -86,7 +87,10 @@ class _ContactButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TapScale(
-      onTap: () => launchUrl(Uri.parse(link.url), mode: LaunchMode.externalApplication),
+      onTap: () {
+        AnalyticsService.logEvent('contact_link_tap', parameters: {'type': link.type});
+        launchUrl(Uri.parse(link.url), mode: LaunchMode.externalApplication);
+      },
       child: Card(
         child: ListTile(
           leading: Icon(_iconForType(link.type), color: Theme.of(context).colorScheme.primary),

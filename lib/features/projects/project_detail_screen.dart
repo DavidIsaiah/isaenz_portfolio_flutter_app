@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/analytics/analytics_service.dart';
 import '../../shared/widgets/app_network_image.dart';
 import '../../shared/widgets/error_retry.dart';
 import '../../shared/widgets/tech_chip.dart';
@@ -112,10 +113,16 @@ class ProjectDetailScreen extends ConsumerWidget {
                           children: project.externalLinks
                               .map(
                                 (link) => ElevatedButton.icon(
-                                  onPressed: () => launchUrl(
-                                    Uri.parse(link.url),
-                                    mode: LaunchMode.externalApplication,
-                                  ),
+                                  onPressed: () {
+                                    AnalyticsService.logEvent(
+                                      'project_external_link_tap',
+                                      parameters: {'project_id': project.id, 'label': link.label},
+                                    );
+                                    launchUrl(
+                                      Uri.parse(link.url),
+                                      mode: LaunchMode.externalApplication,
+                                    );
+                                  },
                                   icon: const Icon(Icons.open_in_new, size: 18),
                                   label: Text(link.label),
                                 ),
